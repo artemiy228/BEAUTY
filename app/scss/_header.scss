@@ -1,0 +1,102 @@
+.header {
+  color: $dark;
+
+  &__navigation {
+    display: flex;
+    list-style: none;
+    justify-content: center;
+    align-items: center;
+    background: $gray;
+
+    height: 50px;
+
+    .nav__item + .nav__item {
+      margin-left: 30px;
+    }
+
+    .nav__link {
+      color: $dark;
+      text-decoration: none;
+      transition: all 0.1s linear;
+
+      &:hover {
+        color: $accent;
+      }
+    }
+  }
+
+  &__wrapper {
+    border-bottom: 1px solid #efefef;
+  }
+
+  &__inner {
+    padding: 20px 0 20px 0;
+    color: #000000;
+    font-size: 16px;
+    line-height: 19px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  &__info {
+    display: flex;
+    align-items: center;
+  }
+
+  &__tel {
+    a {
+      font-size: 16px;
+      text-decoration: none;
+      color: #000;
+
+      &:hover {
+        color: $accent;
+      }
+    }
+  }
+
+  &__button {
+    margin-left: 40px;
+    background-color: #fff;
+    padding: 12px 26px 13px 27px;
+    border: 2px solid #66c05d;
+    border-radius: 40px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: all 0.1s linear;
+
+    &:hover {
+      background-color: $accent;
+      color: #fff;
+      box-shadow: 0 0 5px #000;
+    }
+  }
+  &__nav {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    padding: 30px 0;
+    .nav {
+      list-style: none;
+      display: flex;
+      li + li {
+        margin-left: 40px;
+      }
+      a {
+        text-decoration: none;
+        color: #000;
+        font-family: Roboto;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 16px;
+        line-height: 19px;
+        transition: all 0.1s linear;
+        &:hover {
+          color: $accent;
+        }
+      }
+    }
+  }
+}
